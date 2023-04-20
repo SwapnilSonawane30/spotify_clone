@@ -13,10 +13,10 @@ export default function Navbar({ navBackground }) {
         <input type="text" placeholder="Artist,songs or podcasts" />
       </div>
       <div className="avatar">
-        <a href="">
+        <div className="a">
           <CgProfile />
           <span>{userInfo?.userName}</span>
-        </a>
+        </div>
       </div>
     </Container>
   );
@@ -58,7 +58,7 @@ const Container = styled.div`
     display: flex;
     justify-content: center;
     align-items: center;
-    a {
+    .a {
       display: flex;
       justify-content: center;
       align-items: center;
